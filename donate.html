@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Donate Food</title>
+
+
+    <style>
+        body {
+
+            font-family: Arial, sans-serif;
+            background: #faf7f7;
+            text-align: center;
+            padding: 50px;
+
+        }
+
+
+        h1 {
+
+            color: #4B3730;
+
+        }
+
+
+
+        form {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 0 10px grey;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            width: 400px;
+
+            margin: auto;
+
+        }
+
+
+
+        input,
+        textarea {
+
+
+            width: 300px;
+
+            padding: 12px;
+
+            margin: 10px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 8px;
+
+            font-size: 15px;
+
+        }
+
+
+
+        textarea {
+
+            height: 100px;
+
+            resize: none;
+
+        }
+
+
+
+        button {
+
+
+            background: #7F9378;
+
+            color: white;
+
+            padding: 12px 30px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            margin-top: 15px;
+
+            font-size: 16px;
+
+        }
+
+
+
+        button:hover {
+
+
+            background: #AD89B5;
+
+
+        }
+    </style>
+
+
+</head>
+
+
+
+<body>
+
+
+    <h1>🍲 Donate Food</h1>
+
+
+
+    <form onsubmit="showMessage(event)">
+
+
+
+        <input type="text" placeholder="Your Name" required>
+
+
+
+        <input type="text" placeholder="Food Type" required>
+
+
+
+        <input type="text" placeholder="Quantity" required>
+
+
+
+        <input type="text" placeholder="Location" required>
+
+
+
+        <input type="number" placeholder="Contact Number" required>
+
+
+
+        <textarea placeholder="Additional Details" required></textarea>
+
+
+
+        <button type="submit">
+
+            Submit Donation
+
+        </button>
+
+
+
+    </form>
+
+
+
+
+    <script>
+
+
+        function showMessage(event) {
+
+
+            event.preventDefault();
+
+
+            alert("✅ Food donation request submitted successfully! Thank you for helping others ❤️");
+
+
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+
+</html>

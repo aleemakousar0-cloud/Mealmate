@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Find Food</title>
+
+
+    <style>
+        body {
+
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: #faf7f7;
+
+        }
+
+
+        h1 {
+
+            color: #4B3730;
+
+        }
+
+
+
+        form {
+
+
+            background: white;
+
+            padding: 30px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            border-radius: 15px;
+
+            box-shadow: 0 0 10px grey;
+
+            width: 400px;
+
+            margin: auto;
+
+
+        }
+
+
+
+        input {
+
+
+            width: 300px;
+
+            padding: 12px;
+
+            margin: 10px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 8px;
+
+            font-size: 15px;
+
+
+        }
+
+
+
+        button {
+
+
+            background: #AD89B5;
+
+            color: white;
+
+            padding: 12px 25px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            margin-top: 15px;
+
+            font-size: 16px;
+
+
+        }
+
+
+
+        button:hover {
+
+
+            background: #7F9378;
+
+
+        }
+    </style>
+
+
+</head>
+
+
+
+<body>
+
+
+    <h1>🍱 Find Food</h1>
+
+
+
+    <form onsubmit="showMessage(event)">
+
+
+
+        <input type="text" placeholder="Your Name" required>
+
+
+
+        <input type="text" placeholder="Required Food" required>
+
+
+
+        <input type="number" placeholder="Number of People" required>
+
+
+
+        <input type="text" placeholder="Your Location" required>
+
+
+
+        <input type="number" placeholder="Phone Number" required>
+
+
+
+        <button type="submit">
+
+            Request Food
+
+        </button>
+
+
+
+    </form>
+
+
+
+
+    <script>
+
+
+        function showMessage(event) {
+
+
+            event.preventDefault();
+
+
+            alert("✅ Food request sent successfully! Nearby donors will be notified 🍲");
+
+
+        }
+
+
+    </script>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Food Emergency Alert</title>
+
+
+    <style>
+        body {
+
+            font-family: Arial;
+
+            background: #faf7f7;
+
+            text-align: center;
+
+            padding: 50px;
+
+        }
+
+
+
+        h1 {
+
+            color: #4B3730;
+
+        }
+
+
+
+        form {
+
+            background: white;
+
+            width: 400px;
+
+            margin: auto;
+
+            padding: 30px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 0 10px grey;
+
+        }
+
+
+
+        input,
+        textarea {
+
+            display: block;
+
+            width: 300px;
+
+            padding: 12px;
+
+            margin: 15px auto;
+
+            border: 1px solid #ddd;
+
+            border-radius: 8px;
+
+        }
+
+
+
+        textarea {
+
+            height: 100px;
+
+        }
+
+
+
+        button {
+
+            background: #D98686;
+
+            color: white;
+
+            border: none;
+
+            padding: 12px 30px;
+
+            border-radius: 10px;
+
+            font-size: 16px;
+
+        }
+
+
+
+        button:hover {
+
+            background: #7F9378;
+
+        }
+    </style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+    <h1>
+
+        🚨 Food Emergency Alert
+
+    </h1>
+
+
+
+
+    <form onsubmit="sendAlert(event)">
+
+
+
+        <input type="text" placeholder="Your Name" required>
+
+
+
+        <input type="tel" placeholder="Phone Number" required>
+
+
+
+        <input type="text" placeholder="Required Food" required>
+
+
+
+        <input type="number" placeholder="Number of People" required>
+
+
+
+        <input type="text" placeholder="Your Location" required>
+
+
+
+        <textarea placeholder="Emergency Details" required></textarea>
+
+
+
+
+        <button type="submit">
+
+            Send Alert
+
+        </button>
+
+
+
+    </form>
+
+
+
+
+
+
+
+    <script>
+
+
+        function sendAlert(event) {
+
+
+            event.preventDefault();
+
+
+
+            alert("🚨 Emergency request has been sent successfully!\n\nNearby donors and volunteers will be notified ❤️");
+
+
+
+        }
+
+
+
+    </script>
+
+
+
+
+</body>
+
+
+</html>
